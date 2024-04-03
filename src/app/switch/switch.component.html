@@ -1,0 +1,12 @@
+<div [ngSwitch]="dia">
+    <span *ngSwitchCase="1">hoy es lunes</span>
+    <span *ngSwitchCase="2">hoy es martes</span>
+    <span *ngSwitchCase="3">hoy es miercoles</span>
+    <span *ngSwitchCase="4">hoy es jueves</span>
+    <span *ngSwitchCase="5">hoy es viernes</span>
+    <span *ngSwitchCase="6">hoy es sabado</span>
+    <span *ngSwitchCase="7">hoy es domingo</span>
+    <span *ngSwitchDefault>Valor no valido</span>
+</div>
+<input type="number" class="form-control" #day>
+<button class="btn btn-primary m-3" (click)="cambiarDia(day.value)">Cambiar dia</button>
