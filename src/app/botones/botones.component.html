@@ -1,0 +1,12 @@
+<img class="w-50 h-50" [src]="src" alt="">
+<div>
+    <button  class="btn btn-primary" (click)="src='https://images.pexels.com/photos/13289844/pexels-photo-13289844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'">imagen1</button>
+    <button  class="btn btn-danger" (click)="src='https://images.pexels.com/photos/11113558/pexels-photo-11113558.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'">imagen2</button>
+    
+</div>
+<!-- 
+<p [class]="text_color">Texto que va a cambiar de color</p>
+<p>{{text_color}}</p>
+<button (click)="button_disabled=!button_disabled" class="btn btn-secondary">Activar/Desactivar</button> -->
+
+<!-- Boton con clase dinamica <button [ngClass]="{'disabled':button_disabled}"  class="btn btn-danger" (click)="text_color='text-danger'">Color rojo</button> -->
