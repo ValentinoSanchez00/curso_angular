@@ -1,0 +1,37 @@
+<div class="card">
+    <div class="card-body">
+        <form [formGroup]="formUser">
+            <div class="mb-2">
+                <label class="form-label">
+                    Nombre
+                </label>
+                <input type="text" formControlName="name" class="form-control" placeholder="Ingresar nombre">
+
+                <div class="alert alert-danger mt-3" [hidden]="name.valid || name.pristine">
+                    El nombre es requerido
+                </div>
+
+
+            </div>
+            <div class="mb-2">
+                <label class="form-label">
+                    Email
+                </label>
+                <input type="email" formControlName="email" class="form-control" placeholder="Ingresar email">
+               <div class="alert alert-danger mt-3" [hidden]="email.valid || email.pristine">
+                    <span *ngIf="email.hasError('required')">
+                        El email es requerido
+                    </span>
+                    <span *ngIf="email.hasError('email')">
+                        El email es invalido
+                    </span>
+                </div>
+            </div>
+            <button class="btn btn-primary" [disabled]="formUser.invalid" >Enviar</button>
+        </form>
+    </div>
+</div>
+<!-- {{email.errors | json}} -->
+<!-- {{name.value}}
+{{email.value}} -->
+<!-- {{formUser.get('email')?.value}} -->

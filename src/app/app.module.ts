@@ -7,6 +7,11 @@ import { BotonesComponent } from './botones/botones.component';
 import { FormComponent } from './form/form.component';
 import { BuclesComponent } from './bucles/bucles.component';
 import { SwitchComponent } from './switch/switch.component';
+import { Form2Component } from './form2/form2.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Form3Component } from './form3/form3.component';
+
+
 
 
 @NgModule({
@@ -17,10 +22,14 @@ import { SwitchComponent } from './switch/switch.component';
     FormComponent,
     BuclesComponent,
     SwitchComponent,
+    Form2Component,
+    Form3Component,
     
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
