@@ -1,0 +1,8 @@
+<form (ngSubmit)="addMessage()">
+<label class="form-label">Ingresar mensaje</label>
+<input type="text" class="form-control" placeholder="Ingresar mensaje"  [(ngModel)]="message" name="message">
+<button class="btn btn-primary m-3" >Enviar</button>
+
+</form>
+<!-- {{message}} -->
+<!-- {{messagesService.messages | json}} -->

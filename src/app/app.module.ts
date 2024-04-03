@@ -10,6 +10,9 @@ import { SwitchComponent } from './switch/switch.component';
 import { Form2Component } from './form2/form2.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Form3Component } from './form3/form3.component';
+import { ChildrenComponent } from './children/children.component';
+import { AddMessagesComponent } from './add-messages/add-messages.component';
+import { ListMessagesComponent } from './list-messages/list-messages.component';
 
 
 
@@ -24,6 +27,9 @@ import { Form3Component } from './form3/form3.component';
     SwitchComponent,
     Form2Component,
     Form3Component,
+    ChildrenComponent,
+    AddMessagesComponent,
+    ListMessagesComponent,
     
   ],
   imports: [
